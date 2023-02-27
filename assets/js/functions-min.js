@@ -1068,14 +1068,14 @@
             $(".lucas").click(function () {
                 var t = $(".side-nav").find(".is-active"),
                     n = $(".side-nav").children().index(t),
-                    s = -1;
+                    s = -2;
                     r = s;
                 e(s), i(n, r, s);
             });
             $(".gabriel").click(function () {
                 var t = $(".side-nav").find(".is-active"),
                     n = $(".side-nav").children().index(t),
-                    s = -1;
+                    s = -3;
                     r = s;
                 e(s), i(n, r, s);
             });
