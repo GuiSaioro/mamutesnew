@@ -1899,13 +1899,13 @@ body {
     z-index: 1
 }
 .ficha--tecnica{
-    background-image: url("/assets/img/pergaminho.jpg");
+    background-image: url("/assets/img/pergaminho.png");
     background-repeat: no-repeat;
     background-size: contain;
     color: #442702;
     font-family: 'MedievalSharp';
     font-size: 16px;
-    padding: 68px;
+    padding: 60px 0 50px 98px;
 }
 
 
@@ -1969,12 +1969,8 @@ body {
         z-index: 1
     }
     .ficha--tecnica{
-        background-image: url("/assets/img/about-winners.jpg");
-        background-repeat: no-repeat;
         background-size: contain;
-        color: #442702;
-        font-family: 'MedievalSharp';
-        padding: 27px;
-        font-size: 12px;
+        padding: 50px 0px 60px 69px;
+        font-size: 10px;
     }
 }
