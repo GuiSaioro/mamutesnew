@@ -1054,14 +1054,14 @@
             $(".hazyel").click(function () {
                 var t = $(".side-nav").find(".is-active"),
                     n = $(".side-nav").children().index(t),
-                    s = $(".side-nav").children().length - 0,
+                    s = -4
                     r = s;
                 e(s), i(n, r, s);
             });
             $(".luisao").click(function () {
                 var t = $(".side-nav").find(".is-active"),
                     n = $(".side-nav").children().index(t),
-                    s = -4;
+                    s = -3;
                     r = s;
                 e(s), i(n, r, s);
             });
@@ -1075,7 +1075,7 @@
             $(".gabriel").click(function () {
                 var t = $(".side-nav").find(".is-active"),
                     n = $(".side-nav").children().index(t),
-                    s = -3;
+                    s = -1;
                     r = s;
                 e(s), i(n, r, s);
             });
