@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Syahrizaldev">
+		<title>Responsive Mega Menu Example</title>
+		<!--Mapping-->
+		<script type="text/javascript" src="js/jquery.3.5.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css">
+	</head>
+
+	<body>
+		<!-- Section: Header -->
+		<header class="header" id="navbar">
+			<div class="container">
+				<div class="wrapper">
+					<div class="header-item-left">
+						<h1><a href="./index.html" class="brand">CSSScript</a></h1>
+					</div>
+					<!-- Section: Navbar Menu -->
+					<div class="header-item-center">
+						<div class="overlay"></div>
+						<nav class="menu">
+							<div class="menu-mobile-header">
+								<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
+								<div class="menu-mobile-title"></div>
+								<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+							</div>
+							<ul class="menu-section">
+								<li><a href="#">Home</a></li>
+								
+								<li class="menu-item-has-children">
+									<a href="#">Articles <i class="ion ion-ios-arrow-down"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="#">Article One</a></li>
+											<li><a href="#">Article Two</a></li>
+											<li><a href="#">Article Three</a></li>
+											<li><a href="#">Article Four</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Accounts <i class="ion ion-ios-arrow-down"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="#">Login and Register</a></li>
+											<li><a href="#">Help and Question</a></li>
+											<li><a href="#">Privacy and Policy</a>
+											<li><a href="#">Term of Cookies</a>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header-item-right">
+						
+						<button type="button" class="menu-mobile-trigger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<!-- Section: Main -->
+		<main class="main">
+			<section class="home-section">
+				
+			</section>
+			<section class="armaduras-section">
+				<div class="container-page">
+						<div class="title"><h1><strong>SOBRE AS ARMADURAS</strong></h1></div>
+						<article class="text">
+					
+							<p>No HMB são utilizadas réplicas de armaduras que precisam ser historicamente
+								fiéis ao período escolhido pelo atleta. Para que isso ocorra, o usuário precisa
+								criar um "dossiê" que contenham ilustrações do período histórico escolhido
+								(iluminuras e efígies) e apresentá-las ao Comitê de Autenticidade do torneio
+								em que terá participação. Essas informações podem ser encontradas para pesquisa
+								em sites específicos:
+							</p>
+					<ul class="links">
+						<li><a href="https://effigiesandbrasses.com/ ">effigiesandbrasses.com (imagens de efigies)</a></li>
+						<li><a href="https://manuscriptminiatures.com/ ">manuscriptminiatures.com(iluminuras e fontes)</a></li>
+						<li><a href="https://armourinart.com/ ">armourinart.com(armaduras em obras de arte)</a></li>
+					</ul>
+					<p>A grande maioria dos lutadores utilizam armaduras europeias do século XIV devido ao grande nível
+					de segurança oferecido por elas, mas também podemos encontrar kits de armaduras asiáticos e orientais
+					do mesmo período histórico, com suas próprias vantagens e características.
+					Hoje, a produção dos kits é mais fácil devido a tecnologia e facilidade em conseguir os insumos necessários
+					(chapas de aço, peças de couro tratado, rebites, fivelas etc.).
+					Cada kit tem um peso diferente (entre 30kg e 45kg) e por causa disso, o atleta
+					necessita de um preparo físico em dia. </p> 
+					<h2>ANATOMIA DA ARMADURA</h2>
+					<p>Cada armadura específica de um período histórico e região tem suas características pessoais.</p>
+					<div style="border: 5px solid orange; padding: 20px; margin: auto; width: 40vw; ">
+					<img
+						id="armadura"
+						src="img/2-capa.png"
+						usemap="#armaduramap"
+						style="width: 100%"
+					/>
+					</div>
+					<map name="armaduramap">
+					<area shape="poly" coords="350,31,332,11,315,1,293,7,280,15,264,32,251,52,245,74,239,96,239,123,246,147,248,172,247,186,259,201,274,206,295,197,310,191,329,184,337,184,350,179,363,173,372,168,375,157,380,132,369,117,358,113,365,92,366,74,357,52"  alt="elmo" id="elmo" href="#" class="map">
+					<area shape="poly" coords="242,182,228,189,214,195,201,208,194,231,204,248,219,262,255,269,280,271,304,265,336,251,356,238,383,215,405,201,417,201,415,184,405,171,390,162,378,167,365,173,349,180,335,183,326,188,309,195,283,205,266,204,252,195"  alt="cota de malha" id="cota" href="#" class="map">
+					<area shape="poly" coords="204,250,215,258,232,262,258,266,285,266,305,262,325,255,352,244,362,228,376,221,372,240,372,261,375,289,379,312,388,332,395,349,389,368,386,385,386,405,392,431,397,453,398,474,387,483,386,506,393,527,393,546,398,569,389,579,346,617,326,619,307,617,272,610,240,600,226,596,199,587,178,581,181,563,190,534,202,486,209,463,219,424,219,407,215,376,212,348,208,311,206,282" alt="brigandina" id="brigandina" href="#" class="map">
+					<area shape="poly" coords="412,477,398,478,387,487,390,502,394,521,394,533,395,550,406,571,416,585,431,593,447,593,460,586,470,572,474,551,468,530,481,508,489,495,469,488,463,501,440,506,419,504,413,494" alt="Manopla Direita" id="manoplaD" href="#" class="map">
+					<area shape="poly" coords="140,450,171,446,208,449,182,545,165,547,157,539,149,528,141,518,140,505,153,482" alt="Manopla Esquerda" id="manoplaE" href="#" class="map">
+					<area shape="poly" coords="302,618,305,651,312,683,337,691,372,684,380,657,385,619" alt="coxote direito" id="coxoteD" href="#" class="map">
+					<area shape="poly" coords="177,587,202,596,240,606,225,637,216,652,200,659,187,661,171,663,159,655,156,643,167,619" alt="coxote Esquerdo" id="coxoteE" href="#" class="map">
+					<area shape="poly" coords="312,683,324,692,335,694,343,693,355,692,367,691,376,684,381,658,392,640,401,641,403,665,407,677,409,693,398,709,378,709,363,714,347,717,334,715,318,708,315,696" alt="joelho Direito" id="joelhoD" href="#" class="map">
+					<area shape="poly" coords="152,647,158,655,164,662,173,669,182,668,187,678,185,686,184,693,189,707,179,711,171,710,163,688,156,673,151,665" alt="joelho Esquerdo" id="joelhoE" href="#" class="map">
+					<area shape="poly" coords="474,360,468,367,462,362,459,349,450,337,435,344,428,362,426,374,423,385,418,395,425,399,428,406,433,420,437,431,445,441,454,441,462,435,467,417,474,408,479,396,482,384,479,371,474,360" alt="Cotovelo" id="cotovelo" href="#" class="map">
+					<area shape="poly" coords="199,244,192,258,194,272,196,287,189,311,188,323,169,325,158,331,170,333,181,331,177,338,172,349,166,362,164,375,160,389,162,402,160,416,158,430,155,447,207,448,211,429,215,417,219,403,202,268,204,253" alt="bracos esquerdo" id="bracoE" href="#" class="map">
+					<area shape="poly" coords="421,207,409,204,398,205,385,211,379,222,375,236,373,257,376,273,377,291,378,306,385,321,391,332,396,348,402,362,407,380,407,398,407,417,410,431,411,465,413,491,419,503,438,503,454,502,465,494,466,479,469,457,471,433,473,418,463,434,453,440,441,435,431,420,423,407,416,393,420,385,425,369,429,351,435,336,447,332,455,338,460,348,464,359,471,356,466,340,467,326,466,309,466,291,461,267,452,245,440,227,431,214" alt="braco direito" id="bracosD" href="#" class="map">
+					<area shape="poly" coords="171,717,168,733,165,752,165,776,159,797,167,803,168,819,180,831,192,828,194,811,192,787,198,765,200,743,204,718,189,706,180,710" alt="greva esquerda" id="grevaE" href="#" class="map">
+					<area shape="poly" coords="321,715,331,715,341,718,350,719,369,713,383,712,391,718,388,730,382,746,377,757,376,770,370,783,368,797,373,805,377,822,371,839,359,843,353,827,346,819,331,817,320,815,308,825,311,808,318,790,324,775,324,752,324,727" alt="greva direita" id="grevasD" href="#" class="map">
+					<area shape="poly" coords="81,841,92,832,103,826,121,820,134,810,147,796,161,785,159,796,162,804,166,814,171,825,176,831,185,832,193,831,194,809,193,796,205,793,223,797,223,810,218,826,211,840,203,844,186,847,161,847,144,856,129,861,109,861,86,860" alt="sabaton esquerdo" id="sabatonE" href="#" class="map">
+					<area shape="poly" coords="309,826,317,818,324,817,338,818,348,822,354,831,357,842,361,857,357,867,358,881,352,893,342,902,329,909,307,909,297,908,292,894,294,879,304,861,308,848,309,837" alt="sabaton direito" id="sabatonD" href="#" class="map"> 
+	
+					</map>
+					<div>
+					<p id="legenda-armadura" class="legenda"></p>
+					</div>
+					<p>Por debaixo de todo esse aço, é necessário que o atleta utilize um tipo especial de roupa
+						acolchoada que diminua a sensação de impacto causado durante o combate. Essa veste também
+						deve seguir o padrão histórico em sua confecção.</p>
+				<img src="images/img-acol.jpg" alt="">
+				</article>
+				</div>
+			</section>
+		</main>
+
+
+		<script src="js/script.js" defer></script>
+	</body>
+<script>
+  $(document).ready(function () {
+      $('#armadura').mapster({
+        enableAutoResizeSupport: true,
+        autoResize: true,
+        autoResizeDelay: 0,
+        autoResizeDuration: 0,
+        onAutoResize: function () {
+        //console.log('auto resized!');
+        }
+        });
+      var nomesarmaduras = ["elmo","cota de malha","brigandina","manopla direita","manopla esquerda","coxote direito","coxotes esquerdo","joelho direito","joelho esquerdo","cotovelo","braço esquerdo","braço direito","greva esquerda","greva direita","sabaton esquerdo","sabaton direito"];
+      $(".map").click(function() {
+        var index = $(".map").index(this);
+        $("#legenda-armadura").text(nomesarmaduras[index]);
+      });
+    });
+
+</script>
+</html>
