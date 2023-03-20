@@ -5,7 +5,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
     drag   : 'free',
     focus  : 'center',
     perPage: 3,
-    autoScroll: {speed: 0.5,},
+    //autoScroll: {speed: 0.5,},
+    autoScroll: false,
     snap:true,
     isNavigation:true,
     

@@ -118,8 +118,9 @@
 @media(max-width:767px) {
     .splide__track {
         min-height: 73vh;
-        width: 80em;
-        left: -25.8em;
+        /* width: 80em; */
+        left: 0;
+        /* max-width: 100vw; */
     }
     .splide__track img {
        min-width: 50vw;
@@ -322,7 +323,10 @@
 
 .splide__track--nav>.splide__list>.splide__slide {
     border: 3px solid transparent;
-    cursor: pointer
+    cursor: pointer;
+    min-width: fit-content;
+    justify-content: center;
+    display: grid;
 }
 
 .splide__track--nav>.splide__list>.splide__slide.is-active {
@@ -385,3 +389,4 @@
     right: .5em;
     top: 0
 }
+
