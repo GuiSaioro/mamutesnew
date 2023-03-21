@@ -88,3 +88,9 @@ window.addEventListener('scroll', function() {
      navbar.classList.remove('navbar-color');
    }
  });
+ function abrirLink(link) {
+	setTimeout(function() {
+		window.open(link, '_blank');
+	}, 1200); // delay de 1,2 segundos
+
+   }

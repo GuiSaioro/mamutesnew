@@ -94,11 +94,7 @@ button {
   text-decoration: none;
 }
 
-h1 {
-  font-family: lobster, "Courier New", Courier, monospace;
-}
-
-h4 {
+h1,h3,h4 {
   font-family: lobster, "Courier New", Courier, monospace;
 }
 
@@ -141,7 +137,6 @@ h4 {
 .header {
   position: relative;
   display: block;
-  top: -25px;
   left: 0px;
   width: 100%;
   height: auto;
@@ -152,6 +147,7 @@ h4 {
   outline: none;
   background: transparent;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  overflow: hidden;
 }
 
 .header .wrapper {
@@ -617,7 +613,7 @@ h4 {
 @media screen and (min-width: 768px) {
   .fixo {
     position: fixed;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     top: 0px;
   }
 }
@@ -631,18 +627,22 @@ h4 {
   display: block;
   width: 100%;
   min-height: 100vh;
+  position: absolute;
+  top: 0;
 }
 
 .home-section {
   width: 100vw;
+  padding-top: 60px;
 }
 
 .home-section iframe {
   min-width: 130vw;
-  height: 130vh;
+  height: 140vh;
   pointer-events: none;
   position: relative;
   left: 50%;
+  top: 200px;
   transform: translateX(-50%);
   filter: brightness(0.5);
 }
@@ -652,7 +652,7 @@ h4 {
   position: absolute;
   z-index: -111;
   top: -50%;
-  transform: translateY(24%);
+  transform: translateY(50%);
   overflow: hidden;
 }
 
@@ -667,8 +667,7 @@ h4 {
   }
 
   .bg-video {
-    top: -50%;
-    transform: translateY(20%);
+    top: -18%;
     height: auto;
   }
 }
@@ -679,13 +678,14 @@ h4 {
     height: 130vh;
     left: -50%;
     position: relative;
+    top: 0;
   }
 }
 
-.text-mainbanner {
-  color: rgb(250, 250, 250);
-  text-decoration: none;
-  text-align: center;
+.text-mainban{
+   color: rgb(250, 250, 250);
+   text-decoration: none;
+   text-align: center;
 }
 
 @media (max-height: 390px) {
@@ -1085,6 +1085,7 @@ footer a:hover {
 .membro-principal {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .membro-foto {
@@ -1115,6 +1116,7 @@ footer a:hover {
 
 .membro-texto h3 {
   color: rgb(255, 255, 255);
+  
 }
 
 .membro-texto img {
@@ -1129,6 +1131,7 @@ footer a:hover {
   width: 90%;
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
+  font-family: lobster, "Courier New", Courier, monospace;
   
 }
 .membro-texto li {
@@ -1142,11 +1145,15 @@ footer a:hover {
 @media (max-width: 1023px) {
   .membro-principal {
     display: block;
+    overflow: hidden;
   }
   .membro-foto {
     width: 100vw;
     height: 20%;
     text-align: center;
+  }
+  .membro-texto{
+    max-width: 100vw;
   }
   .membro-texto h1{
   font-size: 5.2rem;
@@ -1178,11 +1185,48 @@ footer a:hover {
 }
 .bg-membros{
   width: 100vw;
-  position: relative;
-  top: -74px;
+  height: 40vh;
+  background: black;
 }
 .bg-membros img{
   width: 100vw;
   position: relative;
   top: -74px;
+}
+.bg-membros h1{
+  font-family: lobster, "Courier New", Courier, monospace;
+  font-size: 15vw;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  z-index: 111111;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+
+  .bg-membros{
+    height: 20vh;
+  }
+  .bg-membros h1{
+    padding-top: 50px;
+  }
+ 
+}
+.espadas{
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  height: 5px;
+  text-align: center;
+  background: #feac00;
+}
+.espadas img{
+  width: 40px;
+  position: absolute;
+  bottom: -18px;
+}
+@media (max-height: 390px) {
+  .bg-membros{
+    height: 50vh;
+  }
 }
