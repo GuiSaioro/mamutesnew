@@ -147,7 +147,6 @@ h1,h3,h4 {
   outline: none;
   background: transparent;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  overflow: hidden;
 }
 
 .header .wrapper {
@@ -634,6 +633,7 @@ h1,h3,h4 {
 .home-section {
   width: 100vw;
   padding-top: 60px;
+  height: 60vh;
 }
 
 .home-section iframe {
@@ -649,14 +649,14 @@ h1,h3,h4 {
 
 .bg-video {
   width: 100vw;
+  height: 170vh;
   position: absolute;
   z-index: -111;
-  top: -50%;
-  transform: translateY(50%);
+  top: -15%;
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .home-section iframe {
     width: 100vw;
     height: 120vh;
@@ -667,7 +667,7 @@ h1,h3,h4 {
   }
 
   .bg-video {
-    top: -18%;
+    top: -9%;
     height: auto;
   }
 }
@@ -675,7 +675,7 @@ h1,h3,h4 {
 @media (max-width: 1023px) {
   .home-section iframe {
     width: 330vw;
-    height: 130vh;
+    height: 150vh;
     left: -50%;
     position: relative;
     top: 0;
@@ -1186,7 +1186,9 @@ footer a:hover {
 .bg-membros{
   width: 100vw;
   height: 40vh;
-  background: black;
+  background-image: url(../img/bg-estrelas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bg-membros img{
   width: 100vw;
@@ -1229,4 +1231,16 @@ footer a:hover {
   .bg-membros{
     height: 50vh;
   }
+}
+.legenda{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 3vw;
+  font-family: lobster;
+  text-align: center;
+  text-transform: uppercase;
 }

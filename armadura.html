@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Syahrizaldev">
-		<title>Responsive Mega Menu Example</title>
-		<!--Mapping-->
-		<script type="text/javascript" src="js/jquery.3.5.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css">
-	</head>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	
+	<!--Mapping-->
+	<script type="text/javascript" src="js/jquery.3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+	 
+	<!-- Lcarousel links -->
+	<link rel="stylesheet" href="css/splide.min.css">
+	<script src="js/splide-extension-auto-scroll.min.js"></script>
+	<script src="js/splide.min.js"></script>
+	<script src="js/carosel.js"></script>
+
+	<!--Icones   https://uxwing.com/free-icon-fonts/-->
+	<link rel='stylesheet' href='css/font/uxwing-iconsfont.css' />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css">
+
+	<!--Gallery youtube-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+	<link rel="stylesheet" href="css/videos-youtube/main.css" />
+	<link rel="stylesheet" href="css/videos-youtube/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  
+	<script src="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/owl.carousel.min.js"></script>
+	<script src="js/videos-youtube/main.js"></script>
+
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5a646e">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#0e0e10">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#0e0e10">
+	<title>MAMUTES</title>
+</head>
 
 	<body>
 		<!-- Section: Header -->
@@ -22,44 +52,50 @@
 			<div class="container">
 				<div class="wrapper">
 					<div class="header-item-left">
-						<h1><a href="./index.html" class="brand">CSSScript</a></h1>
+						<!--<h1><a href="./index.html" class="brand">MAMUTES</a></h1>-->
+						<img src="img/logo-pq.png" alt="" width="50" height="50">
 					</div>
 					<!-- Section: Navbar Menu -->
 					<div class="header-item-center">
 						<div class="overlay"></div>
 						<nav class="menu">
 							<div class="menu-mobile-header">
+								<h4 style="margin-left: 20px;">MAMUTES</h4>
 								<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
 								<div class="menu-mobile-title"></div>
 								<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
 							</div>
-							<ul class="menu-section">
-								<li><a href="#">Home</a></li>
+							<ul class="menu-section" style="margin-bottom: 0;">
+								<li><a href="#">Quem somos</a></li>
 								
 								<li class="menu-item-has-children">
-									<a href="#">Articles <i class="ion ion-ios-arrow-down"></i></a>
+									<a href="#">Mídia <i class="ion ion-ios-arrow-down"></i></a>
 									<div class="menu-subs menu-column-1">
 										<ul>
-											<li><a href="#">Article One</a></li>
-											<li><a href="#">Article Two</a></li>
-											<li><a href="#">Article Three</a></li>
-											<li><a href="#">Article Four</a></li>
+											<li><a href="#">Videos</a></li>
+											<li><a href="#">Fotos</a></li>
 										</ul>
 									</div>
 								</li>
 								<li class="menu-item-has-children">
-									<a href="#">Accounts <i class="ion ion-ios-arrow-down"></i></a>
+									<a href="#">HMB <i class="ion ion-ios-arrow-down"></i></a>
 									<div class="menu-subs menu-column-1">
 										<ul>
-											<li><a href="#">Login and Register</a></li>
-											<li><a href="#">Help and Question</a></li>
-											<li><a href="#">Privacy and Policy</a>
-											<li><a href="#">Term of Cookies</a>
+											<li><a href="#">O que é</a></li>
+											<li><a href="#">História do combate</a></li>
 										</ul>
 									</div>
 								</li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Contact</a></li>
+								<li class="menu-item-has-children">
+									<a href="#">Equipamentos <i class="ion ion-ios-arrow-down"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="armas.html">Armas Históricas</a></li>
+											<li><a href="armadura.html">Armaduras Históricas</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">Contato</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -80,7 +116,12 @@
 
 		<!-- Section: Main -->
 		<main class="main">
-			<section class="home-section">
+			<div class="bg-membros">
+				<h1>Armaduras</h1>
+				<div class="text-mainbanner"></div>
+			</div>
+			<div class="espadas"><img style="right:30px" src="img/espadas.png" alt=""><img style="left:30px" src="img/espadas.png" alt=""></div>
+			
 				
 			</section>
 			<section class="armaduras-section">
@@ -136,8 +177,8 @@
 					<area shape="poly" coords="309,826,317,818,324,817,338,818,348,822,354,831,357,842,361,857,357,867,358,881,352,893,342,902,329,909,307,909,297,908,292,894,294,879,304,861,308,848,309,837" alt="sabaton direito" id="sabatonD" href="#" class="map"> 
 	
 					</map>
-					<div>
-					<p id="legenda-armadura" class="legenda"></p>
+					<div class="legenda">
+					<p id="legenda-armadura"></p>
 					</div>
 					<p>Por debaixo de todo esse aço, é necessário que o atleta utilize um tipo especial de roupa
 						acolchoada que diminua a sensação de impacto causado durante o combate. Essa veste também

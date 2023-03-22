@@ -74,9 +74,12 @@ var fixo = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= fixo) {
-    navbar.classList.add("fixo")
+    navbar.classList.add("fixo");
   } else {
     navbar.classList.remove("fixo");
+  }
+  if(window.innerWidth<992){
+   navbar.classList.remove("fixo");
   }
 }
 window.addEventListener('scroll', function() {
