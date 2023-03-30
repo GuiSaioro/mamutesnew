@@ -150,7 +150,7 @@
 					necessita de um preparo físico em dia. </p> 
 					<h2>ANATOMIA DA ARMADURA</h2>
 					<p>Cada armadura específica de um período histórico e região tem suas características pessoais.</p>
-					<div style="border: 5px solid orange; padding: 20px; margin: auto; width: 40vw; ">
+					<div class="cavaleiroimg">
 					<img
 						id="armadura"
 						src="img/2-capa.png"
@@ -206,9 +206,13 @@
       var nomesarmaduras = ["elmo","cota de malha","brigandina","manopla direita","manopla esquerda","coxote direito","coxotes esquerdo","joelho direito","joelho esquerdo","cotovelo","braço esquerdo","braço direito","greva esquerda","greva direita","sabaton esquerdo","sabaton direito"];
       $(".map").click(function() {
         var index = $(".map").index(this);
-        $("#legenda-armadura").text(nomesarmaduras[index]);
-      });
-    });
+		
+		console.log(index)
 
+        $("#legenda-armadura").text(nomesarmaduras[index]).toggle();
+
+      });
+
+    });
 </script>
 </html>
