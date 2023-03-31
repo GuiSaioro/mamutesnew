@@ -860,6 +860,13 @@ h1,h3,h4 {
   text-align: justify;
   padding: 40px 0px;
   background: rgb(252, 232, 208);
+  max-width: 80%;
+  margin: auto;
+}
+@media (max-width: 920px) {
+  .armaduras-section {
+    max-width: 100%;
+  }
 }
 
 .youtube {
@@ -1237,11 +1244,13 @@ footer a:hover {
   left: 50%;
   transform: translateX(-50%);
   bottom: 10%;
-  background-color: #fff;
+  /* background-color: #ffffff; */
+  border-radius: 44%;
   font-size: 3vw;
   font-family: lobster;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
 }
 .cavaleiroimg{
   border: 5px solid orange; 
@@ -1257,7 +1266,4 @@ footer a:hover {
   .legenda{
     font-size: 10vw;
   }
-}
-#legenda-armadura{
- // display: none;
 }
