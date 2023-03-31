@@ -1236,7 +1236,7 @@ footer a:hover {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: 10%;
   background-color: #fff;
   font-size: 3vw;
   font-family: lobster;
@@ -1252,9 +1252,12 @@ footer a:hover {
 }
 @media screen and (max-width: 768px) {
   .cavaleiroimg{
-    min-width: 40vw;
+    min-width: 80vw;
 }
+  .legenda{
+    font-size: 10vw;
+  }
 }
 #legenda-armadura{
-  display: none;
+ // display: none;
 }

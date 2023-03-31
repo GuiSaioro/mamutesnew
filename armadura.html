@@ -204,15 +204,31 @@
         }
         });
       var nomesarmaduras = ["elmo","cota de malha","brigandina","manopla direita","manopla esquerda","coxote direito","coxotes esquerdo","joelho direito","joelho esquerdo","cotovelo","braço esquerdo","braço direito","greva esquerda","greva direita","sabaton esquerdo","sabaton direito"];
-      $(".map").click(function() {
-        var index = $(".map").index(this);
-		
-		console.log(index)
+      
+	  $(".map").click(function() {
 
-        $("#legenda-armadura").text(nomesarmaduras[index]).toggle();
+        var index = $(".map").index(this);
+		var contador = $(this).data('contador')||0;
+		contador++;
+
+		$(this).data('contador', contador);
+
+		if (contador % 2 == 0) {
+			$('#legenda-armadura').slideUp();
+		}
+		else{
+			$('#legenda-armadura').text(nomesarmaduras[index]).slideDown();
+		}
+		
+			console.log(nomesarmaduras[index])
+			console.log(contador)
 
       });
-
+			
     });
+	
+	
+	
+	
 </script>
 </html>
