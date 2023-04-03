@@ -133,7 +133,7 @@
       fillColorMask: 'FFFFFF',
       fillOpacity: 0.5,
       highlight: true,
-      stroke: false,
+      stroke: true,
       strokeColor: '000000',
       strokeOpacity: 0.7,
       strokeWidth: 1,

@@ -97,3 +97,5 @@ window.addEventListener('scroll', function() {
 	}, 1200); // delay de 1,2 segundos
 
    }
+
+/*----------------------------------------*/
