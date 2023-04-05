@@ -29,6 +29,14 @@
 		<script src="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/owl.carousel.min.js"></script>
 		<script src="js/videos-youtube/main.js"></script>
 
+		<!-- jQuery 1.8 or later, 33 KB -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+		<!-- Fotorama from CDNJS, 19 KB -->
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 		<!--favicon-->
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -312,7 +320,24 @@
 				  </div>
 			</section>
 			<section>
-				
+				<div class="container-page">
+				<!-- Add images to <div class="fotorama"></div> -->
+				<div class="fotorama"
+					data-allowfullscreen="native"
+					data-width="100%"
+     				data-ratio="800/600"
+					data-nav="thumbs"
+					data-loop="true"
+					data-autoplay="true"
+					data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'>
+
+
+					<a href="https://s.fotorama.io/1.jpg"><img src="https://s.fotorama.io/1.jpg" width="144" height="96"></a>
+  					<a href="https://s.fotorama.io/2.jpg"><img src="https://s.fotorama.io/2.jpg" width="64" height="128"></a>
+					  <a href="https://s.fotorama.io/2.jpg"><img src="https://s.fotorama.io/2.jpg" width="64" height="128"></a>
+					
+				</div>
+			</div>
 			</section>
 			<footer>
 				<div class="container-page">
