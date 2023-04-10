@@ -7,7 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-				 
+		
+		<!--Mapping-->
+		<script type="text/javascript" src="js/jquery.3.5.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imagemapster.js"></script>
+		 
 		<!-- Lcarousel links -->
 		<link rel="stylesheet" href="css/splide.min.css">
 		<script src="js/splide-extension-auto-scroll.min.js"></script>
@@ -28,12 +32,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  
 		<script src="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/owl.carousel.min.js"></script>
 		<script src="js/videos-youtube/main.js"></script>
-
-		<!-- jQuery 1.8 or later, 33 KB -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-		<script src="js/script.js" defer></script>
-
 
 		<!-- Fotorama from CDNJS, 19 KB -->
 		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -59,7 +57,7 @@
 				<div class="wrapper">
 					<div class="header-item-left">
 						<!--<h1><a href="./index.html" class="brand">MAMUTES</a></h1>-->
-						<a href="index.html"><img src="img/logo-pq.png" alt="" width="50" height="50"></a>
+						<img src="img/logo-pq.png" alt="" width="50" height="50">
 					</div>
 					<!-- Section: Navbar Menu -->
 					<div class="header-item-center">
@@ -73,6 +71,16 @@
 							</div>
 							<ul class="menu-section" style="margin-bottom: 0;">
 								<!--<li><a href="#">Quem somos</a></li>-->
+								
+								<li class="menu-item-has-children">
+									<a href="#">Mídia <i class="ion ion-ios-arrow-down"></i></a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li><a href="#">Videos</a></li>
+											<li><a href="#">Fotos</a></li>
+										</ul>
+									</div>
+								</li>
 								<li class="menu-item-has-children">
 									<a href="#">HMB <i class="ion ion-ios-arrow-down"></i></a>
 									<div class="menu-subs menu-column-1">
@@ -83,19 +91,10 @@
 									</div>
 								</li>
 								<li class="menu-item-has-children">
-									<a href="#">Mídia <i class="ion ion-ios-arrow-down"></i></a>
-									<div class="menu-subs menu-column-1">
-										<ul>
-											<li><a href="#videos">Videos</a></li>
-											<li><a href="#">Fotos</a></li>
-										</ul>
-									</div>
-								</li>
-								<li class="menu-item-has-children">
 									<a href="#">Equipamentos <i class="ion ion-ios-arrow-down"></i></a>
 									<div class="menu-subs menu-column-1">
 										<ul>
-											<li><a href="#">Armas Históricas</a></li>
+											<li><a href="armas.html">Armas Históricas</a></li>
 											<li><a href="armadura.html">Armaduras Históricas</a></li>
 										</ul>
 									</div>
@@ -224,54 +223,55 @@
 					</div>
 				</div>
 				
-			</section>
-			<section class="membros-section" id="membros-id">
-				<div class="membros">
-					<h1 style="color: black;">Membros</h1>
-					<div class="splide" role="group" aria-label="Splide Basic HTML Example">
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide"><h2>Hazyel</h2>
-								   <ul class="social">
-										<li><a href="https://www.instagram.com/hazyel_giuvencio/" target="_blank"><i class="fi fi-instagram"> hazyel_giuvencio</i></a></li><br>
-										<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> hazyel_giuvencio</i></a></li>
-									</ul>
-									<img src="img/carousel/2-corte.png" alt="" onclick="abrirLink('hazyel.html')">
-								</li>
-								<li class="splide__slide"><h2>Gabriel</h2>
-									<ul class="social">
-										<li><a href="https://www.instagram.com/gabrielbfsa/" target="_blank"><i class="fi fi-instagram"> gabrielbfsa</i></a></li><br>
-										<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
-										
-									</ul>
-									<img src="img/carousel/3-corte.png" alt="" onclick="abrirLink('gabriel.html')">
-								</li>
-								<li class="splide__slide"><h2>Luisão</h2>
-									<ul class="social">
-										<li><a href="https://www.instagram.com/henriquekopezynski/" target="_blank"><i class="fi fi-instagram"> henriquekopezynski</i></a></li><br>
-										<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
-									</ul>
-									<img src="img/carousel/1-corte.png" alt="" onclick="abrirLink('luisao.html')">
-								</li>
-								<li class="splide__slide"><h2>Lucas Victer</h2>
-									<ul class="social">
-										<li><a href="https://www.instagram.com/l.victer/" target="_blank"><i class="fi fi-instagram"> l.victer</i></a></li><br>
-										<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
-									</ul>
-									<img src="img/carousel/4-corte.png" alt="" onclick="abrirLink('lucas.html')">
-								</li>
-								<li class="splide__slide"><h2>Felipe Ayrosa</h2>
-									<ul class="social">
-										<li><a href="https://www.instagram.com/sir_ayrosa/" target="_blank"><i class="fi fi-instagram"> sir_ayrosa</i></a></li><br>
-										<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
-									</ul>
-									<img src="img/carousel/5-corte.png" alt="" onclick="abrirLink('felipe.html')">
-								</li>
-							</ul>
+			</section>	
+				<section class="membros-section" id="membros-id">
+					<div class="membros">
+						<h1 style="color: black;">Membros</h1>
+						<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide"><h2>Hazyel</h2>
+									   <ul class="social">
+											<li><a href="https://www.instagram.com/hazyel_giuvencio/" target="_blank"><i class="fi fi-instagram"> hazyel_giuvencio</i></a></li><br>
+											<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> hazyel_giuvencio</i></a></li>
+										</ul>
+										<img src="img/carousel/2-corte.png" alt="" onclick="abrirLink('hazyel.html')">
+									</li>
+									<li class="splide__slide"><h2>Gabriel</h2>
+										<ul class="social">
+											<li><a href="https://www.instagram.com/gabrielbfsa/" target="_blank"><i class="fi fi-instagram"> gabrielbfsa</i></a></li><br>
+											<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
+											
+										</ul>
+										<img src="img/carousel/3-corte.png" alt="" onclick="abrirLink('gabriel.html')">
+									</li>
+									<li class="splide__slide"><h2>Luisão</h2>
+										<ul class="social">
+											<li><a href="https://www.instagram.com/henriquekopezynski/" target="_blank"><i class="fi fi-instagram"> henriquekopezynski</i></a></li><br>
+											<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
+										</ul>
+										<img src="img/carousel/1-corte.png" alt="" onclick="abrirLink('luisao.html')">
+									</li>
+									<li class="splide__slide"><h2>Lucas Victer</h2>
+										<ul class="social">
+											<li><a href="https://www.instagram.com/l.victer/" target="_blank"><i class="fi fi-instagram"> l.victer</i></a></li><br>
+											<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
+										</ul>
+										<img src="img/carousel/4-corte.png" alt="" onclick="abrirLink('lucas.html')">
+									</li>
+									<li class="splide__slide"><h2>Felipe Ayrosa</h2>
+										<ul class="social">
+											<li><a href="https://www.instagram.com/sir_ayrosa/" target="_blank"><i class="fi fi-instagram"> sir_ayrosa</i></a></li><br>
+											<li><a href="https://www.facebook.com/xxx/" target="_blank"><i class="fi fi-facebook-square"> xxx</i></a></li>
+										</ul>
+										<img src="img/carousel/5-corte.png" alt="" onclick="abrirLink('felipe.html')">
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					</div>
-			</section>
+						</div>
+				</section>
+				<div class="espadas"><img style="right:30px" src="img/espadas.png" alt=""><img style="left:30px" src="img/espadas.png" alt=""></div>	
 			<section class="home youtube" id="videos">
 				<div class="container">
 					<h1>Galeria de videos do time no youtube</h1>
@@ -321,23 +321,28 @@
 					</div>
 				  </div>
 			</section>
+			<div class="espadas"><img style="right:30px" src="img/espadas.png" alt=""><img style="left:30px" src="img/espadas.png" alt=""><img style="right:50" src="img/espadas.png" alt=""></div>
 			<section>
-				<div class="container-page">
+				<h1 style="text-align: center;margin-top: 20px;">Galeria de Fotos</h1>
+				<div class="container-fotos">
+					
 				<!-- Add images to <div class="fotorama"></div> -->
 				<div class="fotorama"
 					data-allowfullscreen="native"
 					data-width="100%"
      				data-ratio="800/600"
+					data-fit="contain"
 					data-nav="thumbs"
 					data-loop="true"
 					data-autoplay="true"
 					data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'>
 
 
-					<a href="https://s.fotorama.io/1.jpg"><img src="https://s.fotorama.io/1.jpg" width="144" height="96"></a>
-  					<a href="https://s.fotorama.io/2.jpg"><img src="https://s.fotorama.io/2.jpg" width="64" height="128"></a>
-					  <a href="https://s.fotorama.io/2.jpg"><img src="https://s.fotorama.io/2.jpg" width="64" height="128"></a>
-					
+					<a href="img/fotos/foto-1.jpeg"><img src="img/fotos/foto-1.jpeg" width="144" height="96"></a>
+					<a href="img/fotos/foto-2.jpeg"><img src="img/fotos/foto-2.jpeg" width="144" height="96"></a>
+					<a href="img/fotos/foto-3.jpeg"><img src="img/fotos/foto-3.jpeg" width="144" height="96"></a>
+					<a href="img/fotos/foto-4.jpeg"><img src="img/fotos/foto-4.jpeg" width="144" height="96"></a>
+					<a href="img/fotos/foto-5.jpeg"><img src="img/fotos/foto-5.jpeg" width="144" height="96"></a>
 				</div>
 			</div>
 			</section>
@@ -388,6 +393,6 @@
 				</div>
 			</footer>
 		</main>
-		
+		<script src="js/script.js" defer></script>
 	</body>
 </html>
