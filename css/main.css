@@ -765,7 +765,7 @@ h1,h2,h3,h4 {
 .flip-box {
   background-color: transparent;
   width: 20vw;
-  height: 50vh;
+  height: 55vh;
   border: 0px solid rgb(74, 74, 74);
   perspective: 1000px;
 }
@@ -996,7 +996,7 @@ footer a:hover {
 }
 
 .top-footer {
-  padding-top: 0px;
+  padding-top: 20px;
   align-items: flex-end;
 }
 
@@ -1007,7 +1007,13 @@ footer a:hover {
     flex-direction: column;
   }
 }
-
+footer {
+  background-image: url(../img/logo-peb.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  }
+  
 .footer-content {
   font-size: 14px;
   color: rgb(255, 255, 255);
