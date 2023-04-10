@@ -118,12 +118,19 @@ h1,h2,h3,h4 {
   width: 50vw;
   display: block;
   margin: auto;
-  }
+}
 
 .container-fotos {
-  margin: auto;
   display: flex;
   justify-content: space-around;
+  max-width: 90%;
+  margin: auto;
+}
+
+.fotorama__thumb-border{
+    border-color: rgb(0, 175, 234);
+    /*background-image: linear-gradient(to right bottom, rgb(84 187 254 / 50%), rgb(84 187 254 / 50%)) !important;*/
+    background-color: rgba(44, 125, 247, 0.473) !important;
 }
 
 @media only screen and (max-width: 992px) {
